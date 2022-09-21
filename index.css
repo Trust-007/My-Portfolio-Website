@@ -77,11 +77,12 @@ nav .drop-down {
   color: #7f8cff;
 }
 
-.social-icons {
+.social-icons ul {
   display: flex;
   justify-content: space-evenly;
   gap: 15px;
   margin-top: 10px;
+  list-style:none;
 }
 
 .social-icons i {

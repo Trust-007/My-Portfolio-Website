@@ -31,6 +31,10 @@ nav .logo {
   white-space: nowrap;
 }
 
+nav .logo a {
+  text-decoration: none;  
+}
+
 nav .menu-bar {
   font-size: 30px;
   color: #6070ff;

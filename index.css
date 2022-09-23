@@ -258,11 +258,11 @@ nav .drop-down {
 }
 
 .about-myself-skills ul li:nth-of-type(2) i {
-  padding-left: 186px;
+  margin-left: 186px;
 }
 
 .about-myself-skills ul li:nth-of-type(3) i {
-  padding-left: 248px;
+  margin-left: 248px;
 }
 
 .languages-drop-down {

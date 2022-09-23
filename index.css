@@ -207,6 +207,7 @@ nav .drop-down {
   align-items: flex-start;
   border-radius: 0 80px 0 0;
   background-color: #fff;
+  padding-block: 114px;
 }
 
 .about-myself-description {
@@ -253,15 +254,15 @@ nav .drop-down {
 }
 
 .about-myself-skills ul li:nth-of-type(1) i {
-  padding-left: 130px;
+  margin-left: 190px;
 }
 
 .about-myself-skills ul li:nth-of-type(2) i {
-  padding-left: 126px;
+  padding-left: 186px;
 }
 
 .about-myself-skills ul li:nth-of-type(3) i {
-  padding-left: 188px;
+  padding-left: 248px;
 }
 
 .languages-drop-down {

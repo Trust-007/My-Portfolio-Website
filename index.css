@@ -63,16 +63,17 @@ nav .drop-down {
   padding: 50px;
   padding-block-end: 100px;
   border-radius: 0 0 0 80px;
-  
 }
 
-.headline-section, .about-myself-description h1 {
+.headline-section, 
+.about-myself-description h1 {
   font-weight: 700;
   font-size: 48px;
   color: #091e42;
 }
 
-.headline-section, .about-myself-description p {
+.headline-section, 
+.about-myself-description p {
   font-weight: 400;
   font-size: 20px;
   padding-block: 10px;
@@ -128,7 +129,7 @@ nav .drop-down {
   display: block;
 }
 
-.project-details h1{
+.project-details h1 {
   font-weight: 700;
   font-size: 32px;
   color: #172b4d;
@@ -144,7 +145,7 @@ nav .drop-down {
   color: #344563;
 }
 
-.canopy-para img{
+.canopy-para img {
   padding-inline: 10px;
 }
 
@@ -163,7 +164,8 @@ nav .drop-down {
 .language-tags {
   margin-block: 15px;
 }
-.language-tags ul{
+
+.language-tags ul {
   display: flex;
   justify-content: flex-start;
   gap: 15px;
@@ -209,7 +211,6 @@ nav .drop-down {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  max-width: 100%;
   color: #344563;
   padding-inline: 30px;
   margin-top: 30px;
@@ -231,7 +232,7 @@ nav .drop-down {
   padding-block: 15px;
   font-weight: 500;
   font-size: 20px;
-  border-bottom: 1px solid #dfe1e6 ;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .about-myself-skills ul li:nth-of-type(1) i {
@@ -241,6 +242,7 @@ nav .drop-down {
 .about-myself-skills ul li:nth-of-type(2) i {
   padding-left: 126px;
 }
+
 .about-myself-skills ul li:nth-of-type(3) i {
   padding-left: 188px;
 }

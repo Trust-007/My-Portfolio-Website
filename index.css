@@ -253,10 +253,10 @@ nav .drop-down {
   color: #6070ff;
 }
 
-.skill-and-icon{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+.skill-and-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .languages-drop-down {

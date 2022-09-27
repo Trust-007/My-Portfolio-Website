@@ -181,6 +181,27 @@ nav .drop-down {
   background-color: #ebebff;
 }
 
+form button {
+  align-self: flex-start;
+  margin-left: 8%;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #396df2;
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+form button:hover {
+  background-color: #6f95f7;
+  color: white;
+}
+
+form button:active {
+  background-color: #1755f3;
+}
+
 .project-detail-btn button {
   padding: 12px;
   border: 1px solid #396df2;
@@ -359,25 +380,4 @@ form textarea {
   font-weight: 400;
   font-size: 15px;
   color: #172b4d;
-}
-
-form button {
-  align-self: flex-start;
-  margin-left: 8%;
-  padding: 12px;
-  font-weight: 500;
-  font-size: 17px;
-  color: #396df2;
-  background-color: white;
-  border-radius: 8px;
-  border: none;
-}
-
-form button:hover {
-  background-color: #6f95f7;
-  color: white;
-}
-
-form button:active {
-  background-color: #1755f3;
 }

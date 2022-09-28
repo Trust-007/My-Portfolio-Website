@@ -400,27 +400,6 @@ form textarea {
   color: #172b4d;
 }
 
-form button {
-  align-self: flex-start;
-  margin-left: 8%;
-  padding: 12px;
-  font-weight: 500;
-  font-size: 17px;
-  color: #396df2;
-  background-color: white;
-  border-radius: 8px;
-  border: none;
-}
-
-form button:hover {
-  background-color: #6f95f7;
-  color: white;
-}
-
-form button:active {
-  background-color: #1755f3;
-}
-
 @media (min-width: 768px) {
   nav .menu-bar {
     display: none;
@@ -431,7 +410,7 @@ form button:active {
     gap: 240px;
   }
 
-  nav .drop-down{
+  nav .drop-down {
     display: inline-block;
     position: inherit;
   }
@@ -485,7 +464,7 @@ form button:active {
     margin-left: 5%;
   }
 
-  .about-myself-skills{
+  .about-myself-skills {
     width: 100%;
     margin-right: 5%;
   }

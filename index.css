@@ -40,7 +40,6 @@ nav .logo {
   100% {
     transform: rotate(360deg);
   }
-
 }
 
 nav .logo a {
@@ -155,6 +154,10 @@ nav .drop-down {
   transition: 0.5s;
 }
 
+.canopy-para img {
+  padding-inline: 10px;
+}
+
 .project-image img:hover {
   transform: scale(1.1);
 }
@@ -179,10 +182,6 @@ nav .drop-down {
   font-weight: 700;
   font-size: 13px;
   color: #344563;
-}
-
-.canopy-para img {
-  padding-inline: 10px;
 }
 
 .canopy-para p {
@@ -375,7 +374,7 @@ footer {
   transition: 0.5s;
 }
 
-.contact-description:hover{
+.contact-description:hover {
   transform: translateX(15px);
 }
 

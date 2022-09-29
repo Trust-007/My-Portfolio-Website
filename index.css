@@ -152,6 +152,11 @@ nav .drop-down {
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+  transition: 0.5s;
+}
+
+.project-image img:hover {
+  transform: scale(1.1);
 }
 
 .project-details {
@@ -220,6 +225,7 @@ form button {
   background-color: white;
   border-radius: 8px;
   border: none;
+  transition: 0.5s;
 }
 
 .project-detail-btn button {
@@ -231,6 +237,7 @@ form button {
   background-color: white;
   border-radius: 8px;
   margin-block: 5px;
+  transition: 0.5s;
 }
 
 form button:hover {
@@ -365,6 +372,11 @@ footer {
 .contact-description {
   text-align: center;
   margin-inline: 30px;
+  transition: 0.5s;
+}
+
+.contact-description:hover{
+  transform: translateX(15px);
 }
 
 .contact-description h3 {

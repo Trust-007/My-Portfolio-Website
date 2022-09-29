@@ -198,12 +198,6 @@ nav .drop-down {
   background-color: #ebebff;
 }
 
-.language-tags ul div li {
-  font-weight: 500;
-  font-size: 15px;
-  color: #6070ff;
-}
-
 form button {
   align-self: flex-start;
   margin-left: 8%;
@@ -532,6 +526,6 @@ form textarea {
 
   form button {
     align-self: center;
-    margin-left: 0%;
+    margin-left: 0;
   }
 }

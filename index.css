@@ -521,7 +521,7 @@ form textarea {
 
   form input,
   form textarea {
-    border-radius: 0px;
+    border-radius: 0;
   }
 
   form button {

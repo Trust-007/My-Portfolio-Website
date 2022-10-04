@@ -104,7 +104,7 @@ nav .drop-down {
   align-items: flex-start;
 }
 
-.lets-connect h4 {
+.lets-connect p {
   font-weight: 500;
   font-size: 16px;
   color: #7f8cff;
@@ -397,6 +397,11 @@ form {
   align-items: center;
   margin-block: 40px;
   gap: 20px;
+}
+
+form label {
+  visibility: hidden;
+  display: none;
 }
 
 form input {

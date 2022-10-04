@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>TrustMe</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index.css">
@@ -52,11 +52,11 @@
               <div>
                   <p>
                       I’m a software developer! I can help you build a product , feature or website Look through some of my work and
-                      experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                      experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
                   </p>
               </div>
               <div class="lets-connect">
-                      <h4>LETS CONNECT</h4>
+                      <p>LETS CONNECT<p>
                       <div class="social-icons">
                         <ul>
                             <li>
@@ -235,11 +235,11 @@
           <div>
             <p>
                Hello i’m a software developer! I can help you build a product , feature or website Look through some of my work and
-              experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+              experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
             </p>
           </div>
           <div class="lets-connect">
-            <h4>LETS CONNECT</h4>
+            <p>LETS CONNECT</p>
             <div class="social-icons about-me-icons">
               <ul>
                 <li>
@@ -349,9 +349,12 @@
             </p>
           </div>
           <form action="https://formspree.io/f/xjvzwjal" method="post">
-            <input type="text" name="Name" maxlength="30" placeholder="Full Name" required/>
-            <input type="email" name="email" placeholder="Enter email" required/>
-            <textarea name="message" maxlength="500" placeholder="Write your message here" required></textarea>
+            <label for="name">Full-Name</label>
+            <input type="text" name="Name" id="name" maxlength="30" placeholder="Full Name" required/>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter email" required/>
+            <label for="message">Type Message</label>
+            <textarea name="message" id="message" maxlength="500" placeholder="Write your message here" required></textarea>
             <button type="submit">Get in Touch</button>
           </form>
        </div>

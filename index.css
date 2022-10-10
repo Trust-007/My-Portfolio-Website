@@ -51,7 +51,7 @@ nav .logo a {
 }
 
 nav .menu-bar {
-  position: fixed;
+  position: absolute;
   top: 18px;
   bottom: 0;
   right: 20px;
@@ -63,6 +63,7 @@ nav .menu-bar {
 }
 
 nav .drop-down {
+  display: block;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -457,30 +458,44 @@ form textarea {
 }
 
 @media (min-width: 768px) {
+  nav .logo {
+    margin-left: 10%;
+  }
+
   nav .menu-bar {
     display: none;
   }
 
   nav {
-    justify-content: space-around;
-    gap: 490px;
-  }
-
-  nav .drop-down {
-    display: inline-block;
-    transform: translateX(0%);
-    background-color: transparent;
-    backdrop-filter: blur(0px);
-  }
-
-  .drop-down ul {
     display: flex;
     justify-content: space-between;
     gap: 40px;
   }
 
+  nav .drop-down {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    transform: translateX(0%);
+    transform: translateY(36%);
+    margin-right: 10%;
+    backdrop-filter: blur(0px);
+    background-color: transparent;
+  }
+
+  .drop-down ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 37px;
+  }
+
   .drop-down ul li a {
     color: #344563;
+    font-weight: 500;
+    font-size: 16px;
   }
 
   .headline-section {

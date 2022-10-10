@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -59,7 +60,7 @@ nav .menu-bar {
   color: #6070ff;
   z-index: 500;
   cursor: pointer;
-  transform: 0.5s;
+  transition: 0.5s;
 }
 
 nav .drop-down {
@@ -78,11 +79,10 @@ nav .drop-down {
 }
 
 .drop-down ul {
-  
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap:20px;
+  gap: 20px;
   list-style: none;
   margin-top: 60px;
   margin-left: 30px;
@@ -386,7 +386,6 @@ footer {
 }
 
 .footer-design {
-  height: fit-content;
   max-width: 100%;
   background-color: #6070ff;
   background-image: url('assets/contact\ form\ background\ shapes@2x.png');
@@ -480,7 +479,7 @@ form textarea {
     transform: translateX(0%);
     transform: translateY(36%);
     margin-right: 10%;
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(0);
     background-color: transparent;
   }
 

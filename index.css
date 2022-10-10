@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -48,24 +52,50 @@ nav .logo a {
 }
 
 nav .menu-bar {
+  position: absolute;
+  top: 18px;
+  bottom: 0;
+  right: 20px;
   font-size: 30px;
   color: #6070ff;
+  z-index: 500;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 nav .drop-down {
+  display: block;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  display: none;
+  height: 100vh;
+  width: 100%;
+  background: rgba(41, 55, 248, 0.7);
+  backdrop-filter: blur(0.3rem);
+  z-index: 10;
+  transform: translateX(100%);
+  transition: 0.5s;
 }
 
 .drop-down ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
   list-style: none;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.drop-down ul li {
+  font-weight: 600;
+  font-size: 32px;
 }
 
 .drop-down ul li a {
   text-decoration: none;
+  color: white;
 }
 
 .headline-section {
@@ -356,7 +386,6 @@ footer {
 }
 
 .footer-design {
-  height: fit-content;
   max-width: 100%;
   background-color: #6070ff;
   background-image: url('assets/contact\ form\ background\ shapes@2x.png');
@@ -428,28 +457,44 @@ form textarea {
 }
 
 @media (min-width: 768px) {
+  nav .logo {
+    margin-left: 10%;
+  }
+
   nav .menu-bar {
     display: none;
   }
 
   nav {
-    justify-content: space-around;
-    gap: 490px;
-  }
-
-  nav .drop-down {
-    display: inline-block;
-    position: inherit;
-  }
-
-  .drop-down ul {
     display: flex;
     justify-content: space-between;
     gap: 40px;
   }
 
+  nav .drop-down {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    transform: translateX(0%);
+    transform: translateY(36%);
+    margin-right: 10%;
+    backdrop-filter: blur(0);
+    background-color: transparent;
+  }
+
+  .drop-down ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 37px;
+  }
+
   .drop-down ul li a {
     color: #344563;
+    font-weight: 500;
+    font-size: 16px;
   }
 
   .headline-section {

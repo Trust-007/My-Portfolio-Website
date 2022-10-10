@@ -48,8 +48,15 @@ nav .logo a {
 }
 
 nav .menu-bar {
+  position: fixed;
+  top: 18px;
+  bottom: 0;
+  right: 20px;
   font-size: 30px;
   color: #6070ff;
+  z-index: 500;
+  cursor: pointer;
+  transform: 0.5s;
 }
 
 nav .drop-down {
@@ -57,15 +64,34 @@ nav .drop-down {
   top: 0;
   bottom: 0;
   left: 0;
-  display: none;
+  height: 100vh;
+  width: 100%;
+  background: rgba(41, 55, 248, 0.7);
+  backdrop-filter: blur(0.3rem);
+  z-index: 10;
+  transform: translateX(100%);
+  transition: 0.5s;
 }
 
 .drop-down ul {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap:20px;
   list-style: none;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.drop-down ul li {
+  font-weight: 600;
+  font-size: 32px;
 }
 
 .drop-down ul li a {
   text-decoration: none;
+  color: white;
 }
 
 .headline-section {
@@ -439,7 +465,9 @@ form textarea {
 
   nav .drop-down {
     display: inline-block;
-    position: inherit;
+    transform: translateX(0%);
+    background-color: transparent;
+    backdrop-filter: blur(0px);
   }
 
   .drop-down ul {

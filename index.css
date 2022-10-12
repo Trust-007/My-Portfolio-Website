@@ -118,6 +118,7 @@ nav .drop-down {
   background-image: url('assets/Header\ bg@2x.png');
   background-size: cover;
   padding: 30px;
+  margin-top: 20%;
   padding-block-end: 100px;
   border-radius: 0 0 0 80px;
 }
@@ -479,7 +480,7 @@ form textarea {
   z-index: 1050;
   width: 85%;
   padding: 4%;
-  margin-block: 10%;
+  margin-top: 60%;
   border-radius: 18px;
 }
 

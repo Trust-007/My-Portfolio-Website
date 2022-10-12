@@ -88,6 +88,16 @@ nav .drop-down {
   margin-left: 30px;
 }
 
+.language-tags li {
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+  padding: 5px;
+  padding-inline: 10px;
+  border-radius: 7px;
+  background-color: #ebebff;
+}
+
 .drop-down ul li {
   font-weight: 600;
   font-size: 32px;
@@ -188,6 +198,14 @@ nav .drop-down {
   padding-inline: 10px;
 }
 
+.pop-content img {
+  width: 100%;
+}
+
+.pop-content p img {
+  width: auto;
+}
+
 .project-image img:hover {
   transform: scale(1.1);
 }
@@ -233,13 +251,6 @@ nav .drop-down {
   gap: 15px;
   list-style: none;
   margin-bottom: 25px;
-}
-
-.language-tags  li {
-  padding: 5px;
-  padding-inline: 10px;
-  border-radius: 7px;
-  background-color: #ebebff;
 }
 
 form button {
@@ -330,12 +341,6 @@ form button:active {
   font-weight: 500;
   font-size: 20px;
   border-bottom: 1px solid #dfe1e6;
-}
-
-.language-tags li {
-  font-weight: 500;
-  font-size: 12px;
-  color: #6070ff;
 }
 
 .skill-and-icon {
@@ -469,7 +474,7 @@ form textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-color: white;
   z-index: 1050;
   width: 85%;
@@ -484,18 +489,11 @@ form textarea {
   width: 100%;
   align-items: center;
 }
+
 .pop-head h3 {
   font-weight: 700;
   font-size: 32px;
   color: #172b4d;
-}
-
-.pop-content img {
-  width: 100%;
-}
-
-.pop-content p img {
-  width: auto;
 }
 
 .split {
@@ -505,7 +503,7 @@ form textarea {
   width: 100%;
 }
 
-.split p{
+.split p {
   font-weight: 600;
   font-size: 13px;
   color: #7a869a;
@@ -669,8 +667,6 @@ form textarea {
     align-self: center;
     margin-left: 0;
   }
-  
-  /* hopes styles go here*/
 
   .pop-up .pop-content {
     margin-top: 40%;
@@ -687,9 +683,9 @@ form textarea {
   }
 
   .split {
-   flex-direction: row;
-   justify-content: space-around;
-   margin-top: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
   }
 
   .split p {
@@ -725,6 +721,4 @@ form textarea {
   .split div .modal-btns a {
     font-size: 15px;
   }
-
 }
-

@@ -84,7 +84,7 @@ const projectLists = [
 ];
 
 const togglePopUp = (e) => {
-  const itemId = e.originalTarget.id;
+  const itemId = e.target.id;
   projectLists.find((item) => {
     let hi;
     if (item.id === itemId) {

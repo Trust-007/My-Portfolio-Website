@@ -270,3 +270,13 @@ const showError = (message) => {
   `;
 }
 //hopes code
+form.onsubmit = (e) => {
+  const {email} = form.elements;
+  if (email.value.toLowerCase() !== email.value) {
+    e.preventDefault();
+    errMessage.innerHTML = showError('Please use lower case for email field');
+  } else {
+     errMessage.innerHTML = '';
+     return true;
+  }
+};

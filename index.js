@@ -262,21 +262,21 @@ projectLists.map((item) => {
 const form = document.getElementById('form');
 const errMessage = document.getElementById('err-message');
 
-const showError = (message) => {
-  return `
+function showError(message) {
+  return (`
     <div class='error-message'>
       ${message}
     </div>
-  `;
+  `);
 }
-//hopes code
+// hopes code
 form.onsubmit = (e) => {
-  const {email} = form.elements;
+  const { email } = form.elements;
   if (email.value.toLowerCase() !== email.value) {
     e.preventDefault();
     errMessage.innerHTML = showError('Please use lower case for email field');
   } else {
-     errMessage.innerHTML = '';
-     return true;
+    errMessage.innerHTML = '';
   }
+  return true;
 };

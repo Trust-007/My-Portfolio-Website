@@ -521,6 +521,12 @@ form textarea {
   width: 100%;
 }
 
+.error-message {
+  font-size: 15px;
+  color: red;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   nav .logo {
     margin-left: 10%;

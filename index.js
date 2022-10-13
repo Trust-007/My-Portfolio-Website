@@ -257,3 +257,16 @@ projectLists.map((item) => {
   projectItem.appendChild(projectDetails);
   return portfolioContainer.appendChild(projectItem);
 });
+
+// client-side validation
+const form = document.getElementById('form');
+const errMessage = document.getElementById('err-message');
+
+const showError = (message) => {
+  return `
+    <div class='error-message'>
+      ${message}
+    </div>
+  `;
+}
+//hopes code

@@ -257,3 +257,26 @@ projectLists.map((item) => {
   projectItem.appendChild(projectDetails);
   return portfolioContainer.appendChild(projectItem);
 });
+
+// client-side validation
+const form = document.getElementById('form');
+const errMessage = document.getElementById('err-message');
+
+function showError(message) {
+  return (`
+    <div class='error-message'>
+      ${message}
+    </div>
+  `);
+}
+// hopes code
+form.onsubmit = (e) => {
+  const { email } = form.elements;
+  if (email.value.toLowerCase() !== email.value) {
+    e.preventDefault();
+    errMessage.innerHTML = showError('Please use lower case for email field');
+  } else {
+    errMessage.innerHTML = '';
+  }
+  return true;
+};

@@ -270,6 +270,14 @@ function showError(message) {
   `);
 }
 // storing data in browswer
+if (localStorage.getItem('data')) {
+  const objData = JSON.parse(localStorage.getItem('data'));
+  const { email, name, message } = form.elements;
+  name.value = objData.name;
+  email.value = objData.email;
+  message.value = objData.message;
+}
+
 
 form.onsubmit = (e) => {
   const { email, name, message } = form.elements;

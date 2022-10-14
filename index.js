@@ -34,7 +34,7 @@ if (window.innerWidth < 768) {
     document.body.style.position = '';
   };
 
-  portfolioLink.addEventListener('click', removeModal);
+  portfolioLink.addEventListener('click', removeModal());
   aboutLink.addEventListener('click', removeModal);
   contactLink.addEventListener('click', removeModal);
 }
@@ -183,7 +183,7 @@ const togglePopUp = (e) => {
       popUp.appendChild(popContent);
       hi = document.body.appendChild(popUp);
     }
-    return hi;
+    
   });
 };
 

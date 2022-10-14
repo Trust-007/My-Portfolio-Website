@@ -269,14 +269,29 @@ function showError(message) {
     </div>
   `);
 }
-// hopes code
+// storing data in browswer
+if (localStorage.getItem('data')) {
+  const objData = JSON.parse(localStorage.getItem('data'));
+  const { email, name, message } = form.elements;
+  name.value = objData.name;
+  email.value = objData.email;
+  message.value = objData.message;
+}
+
 form.onsubmit = (e) => {
-  const { email } = form.elements;
+  const { email, name, message } = form.elements;
   if (email.value.toLowerCase() !== email.value) {
     e.preventDefault();
     errMessage.innerHTML = showError('Please use lower case for email field');
   } else {
     errMessage.innerHTML = '';
+    const userDetails = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+
+    window.localStorage.setItem('data', JSON.stringify(userDetails));
   }
   return true;
 };

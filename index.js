@@ -278,7 +278,6 @@ if (localStorage.getItem('data')) {
   message.value = objData.message;
 }
 
-
 form.onsubmit = (e) => {
   const { email, name, message } = form.elements;
   if (email.value.toLowerCase() !== email.value) {
